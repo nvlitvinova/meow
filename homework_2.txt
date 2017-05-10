@@ -1,3 +1,4 @@
+for n in range(r):
 #1. Вывести массив вида [3, 7, 11, ..., 23] с шагом 4
 list(range(3, 23, 4))
 
@@ -10,7 +11,7 @@ list(range(3, 23, 4))
 1
 >>> r = 10
 >>> n = 0
->>> while n < r:
+>>> for n in range(r):
 ...     sum = i + j
 ...     print (sum)
 ...     i = j
@@ -31,3 +32,29 @@ list(range(3, 23, 4))
 >>> 
 
 
+
+
+
+
+a = [7, 12, 85, 10, 23, 15, 46, 7, 19, 4]
+print (a)
+if a[0] > a[1] and a[0] > a[2] and a[0] > a[3] and a[0] > a[4] and a[0] > a[5] and a[0] > a[6] and a[0] > a[7] and a[0] > a[8] and a[0] > a[9]:
+    print (a[0])
+elif a[1] > a[0] and a[1] > a[2] and a[1] > a[3] and a[1] > a[4] and a[1] > a[5] and a[1] > a[6] and a[1] > a[7] and a[1] > a[8] and a[1] > a[9]:
+    print (a[1])
+elif a[2] > a[0] and a[2] > a[1] and a[2] > a[3] and a[2] > a[4] and a[2] > a[5] and a[2] > a[6] and a[2] > a[7] and a[2] > a[8] and a[2] > a[9]:
+    print (a[2])
+elif a[3] > a[0] and a[3] > a[1] and a[3] > a[2] and a[3] > a[4] and a[3] > a[5] and a[3] > a[6] and a[3] > a[7] and a[3] > a[8] and a[3] > a[9]:
+    print (a[3])
+elif a[4] > a[0] and a[4] > a[1] and a[4] > a[2] and a[4] > a[3] and a[4] > a[5] and a[4] > a[6] and a[4] > a[7] and a[4] > a[8] and a[4] > a[9]:
+    print (a[4])
+elif a[5] > a[0] and a[5] > a[1] and a[5] > a[2] and a[5] > a[3] and a[5] > a[4] and a[5] > a[6] and a[5] > a[7] and a[5] > a[8] and a[5] > a[9]:
+    print (a[5])
+elif a[6] > a[0] and a[6] > a[1] and a[6] > a[2] and a[6] > a[3] and a[6] > a[4] and a[6] > a[5] and a[6] > a[7] and a[6] > a[8] and a[6] > a[9]:
+    print (a[6])
+elif a[7] > a[0] and a[7] > a[1] and a[7] > a[2] and a[7] > a[3] and a[7] > a[4] and a[7] > a[5] and a[7] > a[6] and a[7] > a[8] and a[7] > a[9]:
+    print (a[7])
+elif a[8] > a[0] and a[8] > a[1] and a[8] > a[2] and a[8] > a[3] and a[8] > a[4] and a[8] > a[5] and a[8] > a[6] and a[8] > a[7] and a[8] > a[9]:
+    print (a[7])
+else:
+    print (a[9])

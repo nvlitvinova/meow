@@ -1,8 +1,8 @@
 >>> dictr = {
 ...     ":)" : "Smail",
 ...     ":(" : "Sad",
-...     "😐" : "Neg",
-...     "😃" : "lol"
+...     ":|" : "Neg",
+...     ":D" : "lol"
 ... }
 >>> 
 >>> def smalificator(string):
@@ -19,5 +19,5 @@
 ...     result = " ".join(words2)
 ...     print(result)
 ... 
->>> smalificator("Hello word :) i have :( day 😐 and 😃 and :))")
+>>> smalificator("Hello word :) i have :( day :| and :D and :))")
 

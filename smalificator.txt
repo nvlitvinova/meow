@@ -1,23 +1,23 @@
->>> dictr = {
-...     ":)" : "Smail",
-...     ":(" : "Sad",
-...     ":|" : "Neg",
-...     ":D" : "lol"
-... }
->>> 
->>> def smalificator(string):
-...     words = string.split() #разбираем вошедшую строку на слова
-...     #print(words)
-...     words2 = []
-...     for w in words: # идем по массиву  слов
-...         if w in dictr: # если слово содержится в дикте
-...             words2.append(dictr[w]) # добавляем данные в массив  ворд2 значения из дикта
-...         else:
-...             words2.append(w) # добавляем слово просто
-...             
-...     #print(words2)
-...     result = " ".join(words2)
-...     print(result)
-... 
->>> smalificator("Hello word :) i have :( day :| and :D and :))")
+dictr = {
+     ":)" : "Smail",
+     ":(" : "Sad",
+     ":|" : "Neg",
+     ":D" : "lol"
+ }
+
+def smalificator(string):
+     words = string.split() #разбираем вошедшую строку на слова
+     #print(words)
+     words2 = []
+     for w in words: # идем по массиву  слов
+         if w in dictr: # если слово содержится в дикте
+             words2.append(dictr[w]) # добавляем данные в массив  ворд2 значения из дикта
+         else:
+             words2.append(w) # добавляем слово просто
+             
+     #print(words2)
+     result = " ".join(words2)
+     print(result)
+
+smalificator("Hello word :) i have :( day :| and :D LOL")
 

@@ -1,0 +1,70 @@
+# 1_задание
+
+class Person:
+    def __init__(self, name = "vasya"):
+        self.name = name
+        self.age = 28
+        self.gender = 'male'
+        
+    def get_name(self):
+        return self.name
+    
+    def set_name(self, name):
+        self.name = name
+    
+    def get_age(self):
+        return self.age
+    
+    def get_gender(self):
+        return self.gender
+
+
+p = Person()
+p.get_name()
+p.get_age()
+p.get_gender
+
+
+p = Person()
+p.set_name("Petya")
+p.get_name()
+p.get_age()
+p.get_gender()
+
+
+
+# 2_задание
+
+
+import random
+class deck:
+    def __init__(self):
+        self.card_value = [2,3,4,5,6,7,8,9,'T','J','Q','K','A']
+        self.card_suit = ['H','D','C','S']
+        card_deck = [(v,s) for v in self.card_value for s in self.card_suit]
+        
+    def get_deck(self):
+        cards = [(v,s) for v in self.card_value for s in self.card_suit]
+        random.shuffle(cards)
+        return cards #Вернули колоду
+    
+    def get_card(self):
+        cards = [(v,s) for v in self.card_value for s in self.card_suit]
+        random.shuffle(cards)
+        self.card1 = cards.pop()
+        return self.card1 #Вернули первую карту
+    
+    def get_2card(self):
+        cards = [(v,s) for v in self.card_value for s in self.card_suit]
+        random.shuffle(cards)
+        self.card1 = cards.pop()
+        self.card2 = cards.pop()
+        return (self.card1,self.card2) #Вернули первую и вторую карту
+
+
+
+
+d = deck()
+#d.get_deck()
+#d.get_card()
+d.get_2card()

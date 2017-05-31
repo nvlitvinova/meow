@@ -21,15 +21,15 @@ class Person:
 
 p = Person()
 p.get_name()
-p.get_age()
-p.get_gender
+#p.get_age()
+#p.get_gender()
 
 
 p = Person()
 p.set_name("Petya")
 p.get_name()
-p.get_age()
-p.get_gender()
+#p.get_age()
+#p.get_gender()
 
 
 

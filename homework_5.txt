@@ -1,17 +1,31 @@
 #1. Три класса - фигура, круг, квадрат.
 #   Три метода:
-#     1. Получить центр
-#     2. Получить периметр
-#     3. Получить площадь
+#     1. Получить периметр
+#     2. Получить площадь
 import math
 
-class circle:
+class figure:
     def __init__(self, radius = 10):
         self.radius = radius
         self.perimetr = 1
         self.ploschad = 1
         self.pi = 3.14
         
+    def get_radius(self):
+        return self.radius
+    
+    def set_radius(self, radius):
+        self.radius = radius
+    
+    def get_perimetr(self):
+        self.perimetr = self.pi * 100
+        return self.perimetr
+    
+    def get_ploschad(self):
+        self.ploschad = self.radius ** 10
+        return self.ploschad
+    
+class circle(figure):
     def get_radius(self):
         return self.radius
     
@@ -26,11 +40,9 @@ class circle:
         self.ploschad = self.pi * self.radius ** 2
         return self.ploschad
     
-class square:
+class square(figure):
     def __init__(self, storona = 10):
         self.storona = storona
-        self.perimetr = 1
-        self.ploschad = 1
         
     def get_storona(self):
         return self.storona
@@ -46,13 +58,11 @@ class square:
         self.ploschad = self.storona ** 2
         return self.ploschad
     
-class trapezium:
+class trapezium(figure):
     def __init__(self):
         self.osnovaniye1 = 5
         self.osnovaniye2 = 11
         self.vysota = 4
-        self.perimetr = 1
-        self.ploschad = 1
         
     def get_osnovaniye1(self):
         return self.osnovaniye1
@@ -69,7 +79,7 @@ class trapezium:
     def get_vysota(self):
         return self.vysota
     
-    def set_vysota(self, storona):
+    def set_vysota(self, vysota):
         self.vysota = vysota
     
     def get_perimetr(self):
@@ -84,33 +94,25 @@ class trapezium:
 
 
 
+f = figure()
+f.set_radius(8)
+#f.get_radius()
+#f.get_perimetr()
+f.get_ploschad()
 
 c = circle()
 c.set_radius(8)
-c.get_radius()
-c.get_perimetr()
-#c.get_ploschad()
+#f.get_radius()
+#f.get_perimetr()
+c.get_ploschad()
 
 s = square()
-s.set_storona(7)
+s.set_storona(5)
 s.get_storona()
-s.get_perimetr()
+#s.get_perimetr()
 s.get_ploschad()
 
 t = trapezium()
 #t.set_vysota(7)
-t.get_perimetr()
-#t.get_ploschad()
-
-
-
-
-
-
-
-2. Список дел
-    1. 2 класса (Список и задача)
-        1. Задачу можно создать, удалить, пометить сделанной
-        2. Задачи можно просмотреть
-        3. Задачи можно перемещать по списку вверх и вниз
-    2. * Список с задачами сохраняется на диск в файл и подгружается из файла
+#t.get_perimetr()
+t.get_ploschad()
